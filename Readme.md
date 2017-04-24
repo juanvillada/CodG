@@ -1,10 +1,12 @@
 
 
-### _Please note that the National Institute for Industrial Property ([INPI](http://www.inpi.gov.br/)) of the Brasilian Goverment has determined the rights of distribution of this software (Process: BR 51 2016 000508-4). Please contact [Juan Villada](juan.arteaga@ufv.br) if you want to use this software for academic research. Please do your requests using your institutional e-mail._
+![CodG Schema](/Images/CodG.png)
 
 ____
 
-![CodG Schema](/Images/CodG.png)
+
+
+### _Please note that the National Institute for Industrial Property ([INPI](http://www.inpi.gov.br/)) of the Brasilian Goverment has determined the rights of distribution of this software (Process: BR 51 2016 000508-4). Please contact [Juan Villada](juan.arteaga@ufv.br) if you want to use this software for academic research. Please do your requests using your institutional e-mail._
 
 ____
 
