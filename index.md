@@ -1,10 +1,10 @@
-# CodG: Analyzing codon positional dependency from genome-scale data
 
-![CodG Schema](/Images/CodG.png)
+
+## _Please note that the National Institute for Industrial Property ([INPI](http://www.inpi.gov.br/)) of the Brasilian Goverment has determined the rights of distribution of this software. Please contact [Juan Villada](juan.arteaga@ufv.br) if you want to use the first release of this software for academic research. You can request a copy of the scripts using your institutional e-mail._
 
 ____
 
-# Click [here](https://github.com/juanvillada/CodG/tree/master/Tutorial_E_coli) for the tutorial.
+![CodG Schema](/Images/CodG.png)
 
 ____
 
