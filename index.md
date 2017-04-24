@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# CodG: Analyzing codon positional dependency from genome-scale data
 
-You can use the [editor on GitHub](https://github.com/juanvillada/CodG/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+![CodG Schema](/Images/CodG.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+____
 
-### Markdown
+# Click [here](https://github.com/juanvillada/CodG/tree/master/Tutorial_E_coli) for the tutorial.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+____
 
-```markdown
-Syntax highlighted code block
+# CodG
 
-# Header 1
-## Header 2
-### Header 3
+## Description
+CodG is a program developed in R language that automates the testing procedures of the preferred codon usage as a function of the position within genes using genome-scale data. 
 
-- Bulleted
-- List
+This program is based on the SeqinR and BioStrings packages. The program uses six algorithms: SyMuGS (Synonymous Mutated Genome Simulator), QuantiCUB (Position-dependent Codon Usage Bias Quantifier), ExVar3D (Expected Value and Variance calculator), Z-values, Y-values and IndY-values.
 
-1. Numbered
-2. List
+### SyMuGS: Synonymous Mutated Genome Simulator
+The algorithm, SyMuGS, simulates complete genomes introducing random synonymous mutations in each of the coding sequences. The preferred codon usage bias of each of the sequences is conserved. This algorithm uses the file containing coding sequences in FASTA format as input and generates as output, a different file in FASTA format for each simulated genome.
 
-**Bold** and _Italic_ and `Code` text
+### QuantiCUB: Position-dependent Codon Usage Bias Quantifier
+QuantiCUB quantifies codon usage bias as a function of the position according to the length of each coding sequence in the genome, using as input the FASTA file format containing the coding sequences of the genome to be analyzed. It generates the “Observed_pdCUB” array of 10 positions for 59 codons in a comma separated values ​​(CSV) format.
 
-[Link](url) and ![Image](src)
-```
+### ExVar3D: Expected Value and Variance calculator
+The ExVar3D algorithm calculates the position-dependent codon usage bias for each of the multiple simulated genomes, having as input the sequences of the simulated genomes in FASTA format which are obtained with the SyMuGS algorithm. The program is based on the QuantiCUB algorithm, but other than this, the ExVar3D generates a virtual tridimensional matrix with the quantification of codons of each genome, and from this generates another two arrays: one is an expected value of the matrix of each codon by position, and an array of variance codons for each position. The output format of these two matrices is CSV.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Z-values, Y-values and IndY-values
+Z-values, Y-values and IndY-values are algorithms implemented to create comprehensive figures in order to illustrate the complex results obtained of the entire previous experimentation.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/juanvillada/CodG/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Thus, CodG compares the codon distribution differences of the original genome with a large number of simulated genomes, allowing for the analysis of the evolutionary selective forces acting on individual codons. This program is a useful tool for the analysis of genes and genomes from microorganisms using different approaches such as evolutionary research, expression of recombinant proteins and synthetic biology.
