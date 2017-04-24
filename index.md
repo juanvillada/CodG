@@ -1,6 +1,6 @@
 
 
-## _Please note that the National Institute for Industrial Property ([INPI](http://www.inpi.gov.br/)) of the Brasilian Goverment has determined the rights of distribution of this software. Please contact [Juan Villada](juan.arteaga@ufv.br) if you want to use the first release of this software for academic research. You can request a copy of the scripts using your institutional e-mail._
+### _Please note that the National Institute for Industrial Property ([INPI](http://www.inpi.gov.br/)) of the Brasilian Goverment has determined the rights of distribution of this software (Process: BR 51 2016 000508-4). Please contact [Juan Villada](juan.arteaga@ufv.br) if you want to use this software for academic research. Please do your requests using your institutional e-mail._
 
 ____
 
@@ -15,7 +15,7 @@ CodG is a program developed in R language that automates the testing procedures 
 
 This program is based on the SeqinR and BioStrings packages. The program uses six algorithms: SyMuGS (Synonymous Mutated Genome Simulator), QuantiCUB (Position-dependent Codon Usage Bias Quantifier), ExVar3D (Expected Value and Variance calculator), Z-values, Y-values and IndY-values.
 
-### SyMuGS: Synonymous Mutated Genome Simulator
+### SyMuGS: Synonymous Mutated Genomes Simulator
 The algorithm, SyMuGS, simulates complete genomes introducing random synonymous mutations in each of the coding sequences. The preferred codon usage bias of each of the sequences is conserved. This algorithm uses the file containing coding sequences in FASTA format as input and generates as output, a different file in FASTA format for each simulated genome.
 
 ### QuantiCUB: Position-dependent Codon Usage Bias Quantifier
