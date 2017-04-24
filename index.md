@@ -3,17 +3,8 @@
 ![CodG Schema](/Images/CodG.png)
 
 ____
-
-# CodG
-
-____
-
-
 ### _Please note that the National Institute for Industrial Property ([INPI](http://www.inpi.gov.br/)) of the Brazilian Government has determined the rights of distribution of this software (Process: BR512016000508-4). Please contact [Juan Villada](mailto:juan.arteaga@ufv.br) if you want to use this software for academic research. Please do your requests using your institutional e-mail._
-
 ____
-
-# CodG
 
 ## Description
 CodG is a program developed in R language that automates the testing procedures of the preferred codon usage as a function of the position within genes using genome-scale data. 
