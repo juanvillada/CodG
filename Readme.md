@@ -3,7 +3,7 @@
 ![CodG Schema](/Images/CodG.png)
 
 ____
-### _Please note that the National Institute for Industrial Property ([INPI](http://www.inpi.gov.br/)) of the Brazilian Government has determined the rights of distribution of this software (Process: BR512016000508-4). Please contact [Juan Villada](mailto:juan.arteaga@ufv.br) if you are interested in having a copy of this software for academic research. Please do your request using an institutional e-mail._
+###### _Please note that the Brazilian National Institute for Industrial Property ([INPI](http://www.inpi.gov.br/)) has defined the rights and distribution of this software (Process: BR512016000508-4). Please contact [Juan Villada](mailto:juan.arteaga@ufv.br) if you are interested in using CodG scripts for academic research. Please do your request using an institutional e-mail._
 ____
 
 ## Description
