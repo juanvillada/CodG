@@ -21,5 +21,5 @@ Z-values, Y-values and IndY-values are scripts implemented to create figures to 
 CodG compares the codon distribution differences of the original genome with a large number of simulated genomes, allowing for the analysis of the evolutionary selective forces acting on individual codons. This suite of scripts is a useful tool for the analysis of genes and genomes from microorganisms using different approaches such as evolutionary research, expression of recombinant proteins and synthetic biology.
 
 ____
-##### Please contact [Juan C. Villada](mailto:juan.arteaga@ufv.br) if you have any questions_
+_Please contact [Juan C. Villada](mailto:juan.arteaga@ufv.br) if you have any questions_
 ____
