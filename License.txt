@@ -1,0 +1,33 @@
+"CodG: Position-dependent Codon Analyzer from Genome-scale data" Software License Agreement
+ 
+CodG (C) 2014-2016, Federal University of Viçosa. All rights reserved.
+
+CodG has been deposited under the process number "BR 51 2016 000508 4" into The National Institute of Industrial Property, more commonly abbreviated to INPI, is the intellectual property office responsible for industrial property in Brazil.
+
+The Federal University of Viçosa (“UFV”), Professor Wendel Batista da Silveira, Juan Camilo Villada Arteaga (“Developer(s)”) give permission for you (“Noncommercial Tester”) to use CodG. CodG is a program developed in R language that automates the testing procedures of the preferred codons usage as a function of the position within genes using genome-scale data. CodG is protected by a copyright. 
+
+The UFV hereby grants to you the non-exclusive right to use the CodG software only, solely for non-commercial, research-only purposes and as long as you comply with the terms of this CodG Software License Agreement. UFV and the Developers allow you to perform, copy, and modify CodG for non-commercial purposes on the following conditions:
+
+1. CodG is not used for any commercial purposes, or as part of a system which has commercial purposes.
+
+2. You may not distribute CodG or any modification to CodG to any third party.
+
+If you wish to obtain CodG software for any commercial purposes, you will need to contact the Federal University of Viçosa to see if rights are available and to negotiate a commercial license and pay a fee among other requirements. This includes, but is not limited to, using CodG to provide services to outside parties for a fee. In that case please contact:
+
+    Comissão Permanente de Propriedade Intelectual - CPPI 
+	Office of Research and Graduate Studies
+	Arthur Bernardes  Building - Universidade Federal de Viçosa
+	P.H. Rolfs Avenue - Viçosa - Minas Gerais State - Postal Code: 36570-900
+	Contact: 55 31 3899 1421 - propriedadeintelectual@ufv.br
+
+3. You retain in CodG and any modifications to CodG, the copyright, trademark, patent or other notices pertaining to CodG as provided by UFV.
+
+4. You acknowledge that the Developers, the UFV and its licensees may develop modifications to CodG that may be substantially similar to your modifications of CodG, and that the Developers, UFV and its licensees shall not be constrained in any way by you in UFV's or its licensees' use or management of such modifications. You acknowledge the right of the Developers and UFV to prepare and publish modifications to CodG that may be substantially similar or functionally equivalent to your modifications and improvements, and if you obtain patent protection for any modification or improvement to CodG you agree not to allege or enjoin infringement of your patent by the Developers, the UFV or by any of UFV's licensees obtaining modifications or improvements to CodG from the Federal University of Viçosa or the Developers.
+
+5. If utilization of the CodG software results in outcomes which will be published, you will specify the version of CodG you used and cite the UFV Developers.
+
+6. Any risk associated with using the CodG software at your organization is with you and your organization. CodG is experimental in nature and is made available as a research courtesy "AS IS," expressly without any obligation by UFV to provide accompanying services or support.
+
+7. UFV AND THE DEVELOPERS EXPRESSLY DISCLAIM ANY AND ALL WARRANTIES REGARDING THE SOFTWARE, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES PERTAINING TO MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+8. This Software License Agreement and all rights granted under it terminate on December 31st, 2022. Upon termination, you agree to remove so as to make unrecoverable the original CodG software, all copies and all modifications thereof. 

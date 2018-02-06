@@ -1,10 +1,5 @@
-
-
 ![CodG Schema](/Images/CodG.png)
 
-____
-##### _Please note that the Brazilian National Institute for Industrial Property ([INPI](http://www.inpi.gov.br/)) has defined the rights and distribution of this software (Process: BR512016000508-4). Please contact [Juan Villada](mailto:juan.arteaga@ufv.br) if you are interested in using CodG scripts for academic research. Please do your request using an institutional e-mail._
-____
 
 ## Description
 CodG is a program developed in R language that automates the testing procedures of the preferred codon usage as a function of the position within genes using genome-scale data. 
@@ -24,3 +19,7 @@ The ExVar3D script calculates the position-dependent codon usage bias for each o
 Z-values, Y-values and IndY-values are scripts implemented to create figures to illustrate the results obtained from the  previous analyses.
 
 CodG compares the codon distribution differences of the original genome with a large number of simulated genomes, allowing for the analysis of the evolutionary selective forces acting on individual codons. This suite of scripts is a useful tool for the analysis of genes and genomes from microorganisms using different approaches such as evolutionary research, expression of recombinant proteins and synthetic biology.
+
+____
+##### Please contact [Juan C. Villada](mailto:juan.arteaga@ufv.br) if you have any questions_
+____
