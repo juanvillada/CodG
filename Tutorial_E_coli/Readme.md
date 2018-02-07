@@ -26,8 +26,10 @@ You can see an example of this output in the folder: _4.Ecoli_CodG_Z-values_
 You can see an example of this output in the folder: _5.Ecoli_CodG_Y-values_
 
 8. Finally, you can plot the individual codon distribution as a function of the position by using the **IndY-values** algorithm. 
+
 ![IndY-values](/Tutorial_E_coli/6.Ecoli_CodG_IndY-values/Codons_Y-value7.png)
-You can see an example of this output in the folder: _6.Ecoli_CodG_IndY-values_
+
+>You can see an example of this output in the folder: _6.Ecoli_CodG_IndY-values_
 
 
 9. END! :D
