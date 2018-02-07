@@ -1,5 +1,7 @@
 # CodG: Analyzing codon positional dependency from genome-scale data
 
+https://doi.org/10.1093/dnares/dsx014
+
 ![CodG Schema](/Images/CodG.png)
 
 ____
