@@ -1,4 +1,4 @@
-# CodG: Analyzing codon positional dependency from genome-scale data
+# Analyzing codon positional dependency using genome sequences
 
 https://doi.org/10.1093/dnares/dsx014
 
