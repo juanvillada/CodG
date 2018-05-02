@@ -36,7 +36,7 @@
 #################################################################################
 ############################## INPUT ############################################
 #################################################################################
-j_matrix <- read.csv("Y-values_matrix.csv")
+j_matrix <- read.csv("Y-values_matrix.csv", row.names = 1)
 #################################################################################
 #################################################################################
 
@@ -55,9 +55,10 @@ for (n in 1:15){
     y <- j_matrix[u,]
     plot(c(1:10), j_matrix[u,], ylim = c((min(j_matrix)), (max(j_matrix))), pch=16, xlab = "Bin", ylab = "Y-value",
          main = rownames(j_matrix)[u])
-    lines(loess.smooth(x, y, col="#bdbdbd", lty=1, lwd=4))
+    lines(loess.smooth(x, y, col="#bdbdbd", lty=1, lwd=4, family = "gaussian"))
+    #lines(x, y, col="#bdbdbd", lty=1, lwd=4)
     abline(h=0, lwd=1, lty=2, col="black")
-    }
+  }
   dev.off()
   b <- b+4
   if (c == 56) {
