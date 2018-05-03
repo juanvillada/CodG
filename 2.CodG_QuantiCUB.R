@@ -1,5 +1,4 @@
 ################################################################################
-################################################################################
 ###### CodG (C) 2014-2016, Federal University of Viçosa (UFV). All rights reserved.
 ###### 
 ######  QuantiCUB: Position-dependent Codon Usage Bias Quantifier
@@ -30,13 +29,13 @@
 ####### The UFV hereby grants to you the non-exclusive right to use the CodG 
 ####### software only, solely for non-commercial, research-only purposes.
 ################################################################################
-################################################################################
+
 
 library(Biostrings)
 
-################################################################################
-############################## FUNCTIONS #######################################
-################################################################################
+
+# FUNCTIONS
+
 
 relative_pD <- function(CDS_file, Q){
   CDS_file <- subseq(CDS_file, start=4, end = -4) 	# Start and Stop 
@@ -73,35 +72,14 @@ relative_pD <- function(CDS_file, Q){
   return(P)
   }
   
-
-################################################################################
-############################## INPUTS ##########################################
-################################################################################
-
-CDS_file <- readDNAStringSet(filepath = "Genome.fasta") 	# Indicate the 
-# PATH of the 
-# CDS FASTA file
+# INPUTS 
+CDS_file <- readDNAStringSet(filepath = "Genome.fasta") # Indicate the PATH of the CDS FASTA file
 
 Q <- 10 #Number of relative bins
-################################################################################
 
-
-
-################################################################################
-########################## START THE PROCESS ###################################
-################################################################################
+# START THE PROCESS 
 Observed_matrix <- relative_pD(CDS_file = CDS_file, Q)
-################################################################################
 
 
-
-################################################################################
-############################### OUTPUT #########################################
-################################################################################
-write.csv(Observed_matrix, file = "Observed_pdCUB.csv") # Indicate the 
-														# PATH to save 
-														# the matrix of 
-														# Codon 
-														# Quantification	
-################################################################################
-################################################################################
+# OUTPUT
+write.csv(Observed_matrix, file = "Observed_pdCUB.csv") # Indicate the PATH to save the matrix of Codon Quantification
