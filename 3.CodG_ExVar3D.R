@@ -1,5 +1,4 @@
 ################################################################################
-################################################################################
 ###### CodG (C) 2014-2016, Federal University of Viçosa (UFV). All rights reserved.
 ###### 
 ######  ExVar3D: Expected Value and Variance calculator
@@ -32,15 +31,12 @@
 ####### The UFV hereby grants to you the non-exclusive right to use the CodG 
 ####### software only, solely for non-commercial, research-only purposes.
 ################################################################################
-################################################################################
-
 
 library("seqinr")
 library("Biostrings")
 
-################################################################################
-############################## FUNCTIONS #######################################
-################################################################################
+
+# FUNCTIONS
 relative_pD <- function(CDS_file, Q){
   CDS_file <- subseq(CDS_file, start=4, end = -4)
   CDS_file <- CDS_file[width(CDS_file)>=120]
@@ -65,61 +61,35 @@ relative_pD <- function(CDS_file, Q){
     Y <- X+Y
   }
   P[,Q] <- Y
-  P <- P[-c(15,49,51,57,59),]   #Removing non redundant 
-  								#codons (ATG,TAA,TAG,TGA,TGG)
+  P <- P[-c(15,49,51,57,59),]   #Removing non redundant codons (ATG,TAA,TAG,TGA,TGG)
   return(P)
 }
-################################################################################
-################################################################################
 
-################################################################################
-############################## INPUTS ##########################################
-################################################################################
+# INPUTS
 G <- 200 # Indicate Quantity of Simulated Genomes to analyse
 Q <- 10 # Bins
-################################################################################
-################################################################################
 
-
-################################################################################
-##################### CREATION OF THE 3D MATRIX ################################
-################################################################################
+# CREATIING THE 3D MATRIX 
 m3D <- array(NA, c(59,Q,G))
 for (k in 1:G){
 
   cat(paste("Wait... analysing the Genome # ", k, " of ", 
   			G, "\n", sep="",collapse=""))
   			
-  CDS_file <- readDNAStringSet(filepath = paste("EC_Sim_", 
-  								k, ".fasta", sep = "")) #Indicate in 
-  								#"SimGenome_" the PATH 
-  								#(PATH/"SimGenome_") of the simulated 
-  								#genomes created by SyMuGS
+  CDS_file <- readDNAStringSet(filepath = paste("EC_Sim_", k, ".fasta", sep = "")) #Indicate in "SimGenome_" the PATH (PATH/"SimGenome_") of the simulated genomes created by SyMuGS
   								
   M <- relative_pD(CDS_file = CDS_file, Q)
   
-  m3D[,,k] <- M # Contruction of the 3D matrix of codon quantification 
-  				# as used in QuantiCUB 
+  m3D[,,k] <- M # Contruction of the 3D matrix of codon quantification as used in QuantiCUB 
 }
-################################################################################
-################################################################################
 
+# CREATING THE EXPECTED(MEAN) AND VARIANCE MATRIXES
+# Construction of the expected matrix of the total of quantified genomes by bin and codon
+mean_matrix <- matrix(nrow = 59, ncol = Q)
 
+# Construction of the variance value matrix of the total of quantified genomes by bin and codon
+var_matrix <- matrix(nrow = 59, ncol = Q)
 
-################################################################################
-############ CREATION OF THE EXPECTED(MEAN) AND VARIANCE MATRIXES ##############
-################################################################################
-mean_matrix <- matrix(nrow = 59, ncol = Q)  # Construction of the 
-											# expected matrix of the
-											# total of quantified 
-										  	# genomes by bin and codon
-										  
-										  
-var_matrix <- matrix(nrow = 59, ncol = Q)   # Construction of the 
-											# variance value matrix 
-											# of the total of 
-											# quantified genomes by 
-											# bin and codon
 										
 gg <- vector()
 for (j in 1:Q){
@@ -131,22 +101,12 @@ for (j in 1:Q){
     }
   }
 }
-################################################################################
-################################################################################
 
 
+# OUTPUTS
+# Indicate the PATH to save the Expected Values Matrix
+write.csv(mean_matrix, file = "Expected.csv")
 
 
-################################################################################
-############################### OUTPUTS ########################################
-################################################################################
-write.csv(mean_matrix, file = "Expected.csv") 	# Indicate the PATH 
-												# to save the Expected 
-												# Values Matrix
-											  
-write.csv(var_matrix, file = "Var.csv") # Indicate the PATH to save 
-										# the Variance Values Matrix
-################################################################################
-################################################################################
-
-
+# Indicate the PATH to save the Variance Values Matrix
+write.csv(var_matrix, file = "Var.csv")
