@@ -1,5 +1,4 @@
 ################################################################################
-################################################################################
 ###### CodG (C) 2014-2016, Federal University of Viçosa (UFV). All rights reserved.
 ###### 
 ###### SyMuGS: Synonymous Mutated Genome Simulator
@@ -29,28 +28,22 @@
 ####### The UFV hereby grants to you the non-exclusive right to use the CodG 
 ####### software only, solely for non-commercial, research-only purposes.
 ################################################################################
-################################################################################
+
 
 library(seqinr)
 
-################################################################################
-############################## INPUTS ##########################################
-################################################################################
+
+# INPUTS 
 # You need to indicate your "Genome.fasta", 
 # the file containing the original genome CDSs
 real_genome <- read.fasta(file = "Genome.fasta")
-
 # You need to indicate the number of simulated genomes that you want 
 # to create, modify the default number (200) for the desired number of genomes.
 S <- 200
-################################################################################
 
 
 
-################################################################################
-############################# FUNCTION #########################################
-################################################################################
-
+# FUNCTION
 # Function to Simulate and save the new genomes
 genomeSimulation <- function(CDSfile, S) {
   for (j in 1:S){
@@ -71,16 +64,9 @@ genomeSimulation <- function(CDSfile, S) {
   cat(paste("***** FINISHED!", "*****\n ||| ", S,
             " ||| Genomes Simulated and Saved", sep="",collapse=""))
 }
-################################################################################
-################################################################################
 
 
-################################################################################
-############################### OUTPUTS ########################################
-################################################################################
-########## Execute the following line to start the genome simulations ##########
+
+# OUTPUTS
+# Execute the following line to start the genome simulations 
 genomeSimulation(real_genome, S)
-################################################################################
-################################################################################
-
-
