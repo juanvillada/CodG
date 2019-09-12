@@ -13,7 +13,7 @@ ____
 # CodG
 
 ## Description
-`CodG` is a set of scripts developed in R language that automate the analysis of preferred codon usage as a function of the position within genes using genomic data.
+`CodG` is a set of scripts developed in `R` language that automate the analysis of preferred codon usage as a function of the position within genes using genomic data.
 
 This program is based on the `SeqinR` and `BioStrings` packages. The `CodG` has three main scripts: `SyMuGS` (Synonymous Mutated Genome Simulator), `QuantiCUB` (Position-dependent Codon Usage Bias Quantifier), `ExVar3D` (Expected Value and Variance calculator); and other scripts for support visualization and other analyses: `Z-values`, `Y-values` and `IndY-values`.
 
